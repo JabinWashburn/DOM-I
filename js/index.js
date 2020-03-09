@@ -49,6 +49,16 @@ navStyling1[3].textContent = siteContent['nav']['nav-item-4']
 navStyling1[4].textContent = siteContent['nav']['nav-item-5']
 navStyling1[5].textContent = siteContent['nav']['nav-item-6']
 
+//setting all the text to green
+navStyling1[0].style.color = 'green';
+navStyling1[1].style.color = 'green';
+navStyling1[2].style.color = 'green';
+navStyling1[3].style.color = 'green';
+navStyling1[4].style.color = 'green';
+navStyling1[5].style.color = 'green';
+
+
+
 let domAwesome = document.querySelector('h1');
 domAwesome.textContent = siteContent ['cta']['h1'];
 
