@@ -39,6 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
+
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navStyling1 = document.querySelectorAll('a');
@@ -56,6 +57,7 @@ navStyling1[2].style.color = 'green';
 navStyling1[3].style.color = 'green';
 navStyling1[4].style.color = 'green';
 navStyling1[5].style.color = 'green';
+
 
 
 
@@ -100,3 +102,16 @@ paragraphStyling[6].textContent = siteContent['contact']['phone']
 paragraphStyling[7].textContent = siteContent['contact']['email']
 
 paragraphStyling[8].textContent = siteContent['footer']['copyright']
+
+//============================================================
+//using .appendChild() and .prepend()
+
+let headerNav = document.querySelector('header nav'); 
+const navText = document.createElement('a');
+navText.textContent = 'End';
+headerNav.appendChild(navText);
+navText.style.color = ('green');
+
+let secondNav = document.querySelector('header nav');
+secondNav.prepend('First');
+secondNav.style.color = ('green');
